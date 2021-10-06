@@ -1,0 +1,5 @@
+# @package _group_
+name: cars196
+target: vmf_embeddings.datasets.cars196_dataset.Cars196Dataset
+params:
+  dataset_path: .

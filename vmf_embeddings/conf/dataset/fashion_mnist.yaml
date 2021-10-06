@@ -1,0 +1,5 @@
+# @package _group_
+name: fashion_mnist
+target: vmf_embeddings.datasets.fashion_mnist_dataset.FashionMNISTDataset
+params:
+  dataset_path: .

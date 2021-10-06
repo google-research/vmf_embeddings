@@ -1,0 +1,5 @@
+# @package _group_
+name: cub200
+target: vmf_embeddings.datasets.cub200_dataset.CUB200Dataset
+params:
+  dataset_path: .

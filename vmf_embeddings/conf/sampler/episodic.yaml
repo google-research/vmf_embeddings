@@ -1,0 +1,6 @@
+# @package _group_
+# The episodic sampler samples k instances from each of n random classes
+name: episodic
+n_episodes: 250 # Number of episodes in an "epoch"
+n_classes: 10
+n_samples: 13

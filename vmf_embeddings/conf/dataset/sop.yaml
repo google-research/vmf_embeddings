@@ -1,0 +1,5 @@
+# @package _group_
+name: sop
+target: vmf_embeddings.datasets.sop_dataset.StanfordOnlineProductsDataset
+params:
+  dataset_path: .

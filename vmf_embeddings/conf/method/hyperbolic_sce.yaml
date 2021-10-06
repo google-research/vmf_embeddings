@@ -1,0 +1,6 @@
+# @package _group_
+# Hyperbolic Softmax-Cross-Entropy: https://arxiv.org/pdf/1904.02239.pdf
+name: hyperbolic_sce
+target: vmf_embeddings.methods.methods.HyperbolicSoftmaxCE
+params:
+  c: 1e-05

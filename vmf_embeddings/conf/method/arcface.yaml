@@ -1,0 +1,6 @@
+# @package _group_
+# ArcFace: https://arxiv.org/pdf/1801.07698.pdf
+name: arcface
+target: vmf_embeddings.third_party.pytorch_metric_learning.arcface.ArcFace
+params:
+  m: 0.5

@@ -1,0 +1,6 @@
+# @package _group_
+# von Mises-Fisher Softmax
+name: vmf_softmax
+target: vmf_embeddings.methods.methods.VMFSoftmax
+params:
+  n_samples: 10

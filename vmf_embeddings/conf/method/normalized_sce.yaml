@@ -1,0 +1,5 @@
+# @package _group_
+# Normalized Softmax-Cross-Entropy: https://arxiv.org/pdf/1811.12649.pdf
+# This is the same as Cosine Softmax
+name: normalized_sce
+target: vmf_embeddings.methods.methods.NormalizedSoftmaxCE

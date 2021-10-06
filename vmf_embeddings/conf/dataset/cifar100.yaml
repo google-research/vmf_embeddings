@@ -1,0 +1,5 @@
+# @package _group_
+name: cifar100
+target: vmf_embeddings.datasets.cifar100_dataset.Cifar100Dataset
+params:
+  dataset_path: .

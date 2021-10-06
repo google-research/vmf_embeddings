@@ -1,0 +1,28 @@
+defaults:
+  - mode: train
+  - dataset: mnist
+  - method: unnormalized_sce
+  - arch: n_digit_mnist
+  - sampler: episodic
+
+name: run_1
+random_seed: 1234
+num_workers: 4
+
+hydra:
+  run:
+    dir: vmf_embeddings/runs/${dataset.name}/${method.name}/${arch.params.embedding_dim}dim/${name}
+  sweep:
+    dir: vmf_embeddings/sweeps/${dataset.name}/${method.name}/${arch.params.embedding_dim}dim/${name}
+    subdir: ${hydra.job.override_dirname}
+  job:
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: [dataset, arch.params.learn_temp, method, sampler, sampler.n_episodes, sampler.n_classes, sampler.n_samples, arch.params.embedding_dim, arch.params.n_classes, arch.params.pretrained, arch.params.first_conv_3x3, arch.params.use_vmf, arch.params.n_digits, arch.params.kappa_confidence, arch.params.set_bn_eval]
+  output_subdir: .hydra_${mode.name}
+  job_logging:
+    handlers:
+      file:
+          filename: ${hydra.job.name}.${mode.name}.log

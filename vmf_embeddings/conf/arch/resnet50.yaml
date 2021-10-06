@@ -1,0 +1,13 @@
+# @package _group_
+name: resnet50
+target: vmf_embeddings.third_party.dml_cross_entropy.resnet.resnet50
+params:
+  n_classes: 10
+  embedding_dim: 128
+  set_bn_eval: False
+  pretrained: False
+  first_conv_3x3: True
+  use_vmf: False
+  learn_temp: False
+  init_temp: 0.0
+  kappa_confidence: 0.4  # This only applies when use_vmf = True

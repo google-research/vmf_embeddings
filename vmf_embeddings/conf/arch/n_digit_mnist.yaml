@@ -1,0 +1,11 @@
+# @package _group_
+name: n_digit_mnist
+target: vmf_embeddings.archs.n_digit_mnist_arch.NDigitMNISTArch
+params:
+  embedding_dim: 3
+  n_classes: 10
+  use_vmf: False
+  learn_temp: False
+  init_temp: 0.0
+  kappa_confidence: 0.4  # This only applies when use_vmf = True
+  n_digits: 1 # This may change if using the N-digit MNIST dataset

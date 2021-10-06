@@ -1,0 +1,5 @@
+# @package _group_
+# Unnormalized Softmax-Cross-Entropy
+# This is the same as Standard softmax
+name: unnormalized_sce
+target: vmf_embeddings.methods.methods.UnnormalizedSoftmaxCE
