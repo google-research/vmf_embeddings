@@ -16,20 +16,19 @@ Created by:
 ## Usage
 
 All commands should be run at the top-level `vmf_embeddings` directory.
-For example: `bash vmf_embeddings/run.sh`.
 
 ## Installation
 
 Requires Python 3.7+
 
-`pip install -r vmf_embeddings/requirements.txt`
+`pip install -r requirements.txt`
 
 ## Test Examples
 
 To run a suite of small MNIST & CIFAR10 example scripts to ensure the code is
 running properly:
 
-`bash vmf_embeddings/run.sh`
+`bash run.sh`
 
 ## Datasets
 
