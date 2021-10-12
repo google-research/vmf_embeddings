@@ -1,6 +1,6 @@
 # von Mises-Fisher Embeddings
 
-**Disclaimer: This is not an official Google product.**
+**Disclaimer: This is not an officially supported Google product.**
 
 This repository contains the code for "von Mises-Fisher Loss: An Exploration of
 Embedding Geometries for Supervised Learning" (ICCV 2021)
